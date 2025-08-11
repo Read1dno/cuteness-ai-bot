@@ -1,0 +1,13 @@
+asyncpg
+aiogram
+torch
+torchvision
+Pillow
+numpy
+nudenet
+pyvips
+fastapi
+python-multipart
+uvicorn
+python-dotenv
+jinja2

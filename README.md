@@ -25,7 +25,7 @@
 ## 🔗 Полезные ссылки
 
 - 🤖 **Бот в Telegram**: [@cutecheckbot](https://t.me/cutecheckbot)
-- 📢 **Telegram-канал проекта**: [Cuteness AI News](https://t.me/bloomofficialyt)
+- 📢 **Telegram-канал проекта**: [BLOOM](https://t.me/bloomofficialyt) - ТУТ ЛЕЖИТ МОДЕЛЬКА CuteLarge.pt, БЕЗ КОТОРОЙ БОТ РАБОТАТЬ НЕ БУДЕТ!!!!
 - 💬 **Discord-сервер**: [Вступить в комьюнити](https://discord.gg/n89PDURbTg)
 
 ---
@@ -44,6 +44,30 @@
 ---
 
 ## 📦 Установка и запуск
+
+# Установка libvips для работы с pyvips
+
+Пакет `pyvips` в Python — это только обёртка. Для его работы требуется установленная библиотека **libvips** на системе.
+
+## Windows
+1. Перейдите на страницу релизов:  
+   [https://github.com/libvips/libvips/releases](https://github.com/libvips/libvips/releases)
+2. Скачайте последний архив `vips-dev-w64-all-<версия>.zip`.
+3. Распакуйте, например, в `C:\libvips`.
+4. Добавьте путь `C:\libvips\bin` в переменную окружения **PATH**:
+   - Win+R → `sysdm.cpl` → *Дополнительно* → *Переменные среды*
+   - Найдите `PATH` → *Изменить* → *Новый* → укажите `C:\libvips\bin`
+
+## Linux (Ubuntu/Debian)
+```bash
+sudo apt update
+sudo apt install libvips libvips-dev
+```
+## Проверить работу можно командой
+```bash
+python -m pyvips
+```
+Если ошибок нет - значит все установилось нормально.
 
 ```bash
 # Клонируем репозиторий
@@ -69,4 +93,4 @@ STORAGE_CHAT_ID=ID чата для хранения изображений
 
 ## 📄 License
 This project is licensed under the MIT License.  
-See the [LICENSE](https://github.com/Read1dno/ExternalAutoWallCS2/blob/main/LICENSE) file for details.
+See the [LICENSE](https://github.com/Read1dno/cuteness-ai-bot/blob/main/LICENSE) file for details.
